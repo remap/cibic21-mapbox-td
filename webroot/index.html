@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <title>TD Mapbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+
+    <script src="js/map_manager.js"></script>
+    <script src="js/geojson_drawing.js"></script>
+    <script src="js/extensions.js"></script>
+    <script>
+        var mapMan = new MapManager({wsUrl:window.location.origin.replace('http://','ws://')});
+    </script>
+</body>
+
+</html>
