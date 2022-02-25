@@ -125,7 +125,7 @@ class MapManager {
   }
 
   handelMessage(data) {
-    console.log(data)
+    // console.log(data)
     if ('action' in data) {
       if (data.action === 'map') {
         if (!this.map) { return; }
